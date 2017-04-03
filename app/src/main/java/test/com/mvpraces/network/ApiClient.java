@@ -18,14 +18,7 @@ public class ApiClient {
 
     private static RestInterface restInterface;
 
-    // TEST LOCAL
-    //private static String baseUrl = "http://panel-app.local.sportmaniacs.com";
-
-    // PRODUCCIÓN
-    private static String baseUrl = "https://api-aws.sportmaniacs.com";
-
-    //PRE-PRODUCCIÓN
-//    private static String baseUrl = "https://api-tests.sportmaniacs.com";
+    private static String baseUrl = "https://api-tests.sportmaniacs.com";
 
     public static RestInterface getSportmaniacsClient() {
 

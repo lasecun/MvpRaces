@@ -13,8 +13,8 @@ import test.com.mvpraces.ui.interactor.MainInteractor;
 
 public class MainPresenter implements IMainPresenter {
 
-    MainView view;
-    IMainInteractor interactor;
+    private MainView view;
+    private IMainInteractor interactor;
 
     public MainPresenter(MainView view) {
         this.view = view;

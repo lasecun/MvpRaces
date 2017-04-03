@@ -15,9 +15,9 @@ import test.com.mvpraces.ui.presenter.IMainPresenter;
  * Created by jmarti on 3/4/17.
  */
 
-public class MainInteractor implements IMainInteractor{
+public class MainInteractor implements IMainInteractor {
 
-    IMainPresenter presenter;
+    private IMainPresenter presenter;
 
     public MainInteractor(IMainPresenter presenter) {
         this.presenter = presenter;
@@ -34,7 +34,6 @@ public class MainInteractor implements IMainInteractor{
             public void onResponse(Call<RaceResponse> call, Response<RaceResponse> response) {
                 List<Race> data = response.body().data;
                 presenter.racesList(data);
-
             }
 
             @Override
